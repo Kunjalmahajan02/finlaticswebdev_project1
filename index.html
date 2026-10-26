@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Kunjal Mahajan | AI & Data Science Engineer</title>
+    <meta name="description" content="Portfolio of Kunjal Mahajan, AI & Data Science engineer working on computer vision, deep learning and GenAI." />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -12,45 +13,54 @@
   <body class="bg-slate-950 text-white">
     <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+        <a href="#hero" class="text-2xl font-bold text-cyan-400">Kunjal<span class="text-white">.</span></a>
 
-        <ul class="flex gap-6 text-sm md:text-base">
+        <button id="menu-btn" class="md:hidden text-2xl" aria-label="Open menu" aria-expanded="false">☰</button>
+
+        <ul id="menu" class="hidden md:flex gap-6 text-sm md:text-base absolute md:static top-full left-0 right-0 bg-slate-950 md:bg-transparent flex-col md:flex-row px-6 py-4 md:p-0 border-b border-slate-800 md:border-0">
           <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
           <li><a href="#about" class="hover:text-cyan-400">About</a></li>
           <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+          <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
           <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center px-6">
+    <section id="hero" class="min-h-screen flex items-center justify-center px-6 py-16">
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Your Name</span>
+          <p class="text-cyan-400 font-medium mb-3">AI & Data Science Engineer</p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Hi, I'm <span class="text-cyan-400">Kunjal Mahajan</span>
           </h1>
 
           <p class="text-slate-300 text-lg mb-8">
-            Aspiring Web Developer passionate about building beautiful and responsive websites.
+            Final-year B.E. student building applied computer vision, deep learning and GenAI systems,
+            from real-time assistive tech to medical image analysis.
           </p>
 
-          <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
               View Projects
             </a>
 
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
+            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400/10 transition">
               Contact Me
             </a>
+          </div>
+
+          <div class="flex gap-5 mt-8 text-slate-400 text-sm">
+            <a href="https://github.com/Kunjalmahajan02" target="_blank" rel="noopener" class="hover:text-cyan-400">GitHub ↗</a>
+            <a href="https://linkedin.com/in/kunjal-mahajan" target="_blank" rel="noopener" class="hover:text-cyan-400">LinkedIn ↗</a>
+            <span>📍 Thane, Mumbai</span>
           </div>
         </div>
 
         <div class="flex justify-center">
-          <img
-            src="assets/profile-placeholder.jpg"
-            alt="Profile"
-            class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-          />
+          <div class="w-48 h-48 sm:w-72 sm:h-72 rounded-full border-4 border-cyan-400 shadow-2xl shadow-cyan-500/20 bg-gradient-to-br from-cyan-500/30 to-violet-600/30 flex items-center justify-center">
+            <span class="text-5xl sm:text-7xl font-bold text-white">KM</span>
+          </div>
         </div>
       </div>
     </section>
@@ -60,8 +70,30 @@
         <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
 
         <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
+          I'm a final-year B.E. student in Artificial Intelligence & Data Science at Terna Engineering College,
+          Navi Mumbai. I'm the founder of <span class="text-white font-semibold">BlinkBridge</span>, an assistive
+          tool that lets people who cannot speak or type communicate using only eye blinks and head movements.
+          I've also built a CNN-based tuberculosis detection system for chest X-rays, and I'm currently learning
+          full-stack development with AI through Finlatics.
         </p>
+
+        <div class="grid sm:grid-cols-3 gap-6 mt-12 text-left">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+            <p class="text-cyan-400 text-sm mb-1">Education</p>
+            <p class="font-semibold">B.E. AI & Data Science</p>
+            <p class="text-slate-400 text-sm">Terna Engineering College · 2023–2027</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+            <p class="text-cyan-400 text-sm mb-1">Hackathon</p>
+            <p class="font-semibold">Build and Grow AI 2.0</p>
+            <p class="text-slate-400 text-sm">GDG Cloud Mumbai · 2026</p>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+            <p class="text-cyan-400 text-sm mb-1">Beyond code</p>
+            <p class="font-semibold">National-level dance champion</p>
+            <p class="text-slate-400 text-sm">Kathak, Folk & Contemporary · Head of College Dance Crew</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -72,41 +104,141 @@
         </h2>
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
-
+          <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div class="h-40 bg-gradient-to-br from-cyan-500/40 to-blue-700/40 flex items-center justify-center text-6xl">👁️</div>
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
-
+              <h3 class="text-2xl font-semibold mb-3">BlinkBridge AI</h3>
               <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
+                Real-time computer vision system that turns eye blinks, head nods and turns into Morse code,
+                then decodes it to text and speech. Includes auto-calibration and a countdown UI.
               </p>
-
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Python</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span><span class="tag">pyttsx3</span>
+              </div>
+              <a href="https://github.com/Kunjalmahajan02/Blink-to-Morse" target="_blank" rel="noopener" class="text-cyan-400 hover:underline">
+                View Project ↗
               </a>
+            </div>
+          </div>
+
+          <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div class="h-40 bg-gradient-to-br from-emerald-500/40 to-teal-700/40 flex items-center justify-center text-6xl">🩻</div>
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">TB Detection from Chest X-Rays</h3>
+              <p class="text-slate-400 mb-4">
+                Deep learning system that detects tuberculosis from chest X-ray images using CNN-based
+                medical image analysis, supporting early detection.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Python</span><span class="tag">CNN</span><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div class="h-40 bg-gradient-to-br from-violet-500/40 to-fuchsia-700/40 flex items-center justify-center text-6xl">🗣️</div>
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Speech-to-Text & Translation</h3>
+              <p class="text-slate-400 mb-4">
+                Converts English speech to text and translates it into Hindi, Marathi, Korean, Japanese,
+                Turkish and Spanish using speech recognition and NLP.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Python</span><span class="tag">Speech Recognition</span><span class="tag">NLP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div class="h-40 bg-gradient-to-br from-amber-500/40 to-orange-700/40 flex items-center justify-center text-6xl">📦</div>
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Inventory & Billing System</h3>
+              <p class="text-slate-400 mb-4">
+                Automates inventory tracking, billing and report generation with a structured,
+                user-friendly interface for stock and sales management.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Python</span><span class="tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div class="h-40 bg-gradient-to-br from-rose-500/40 to-pink-700/40 flex items-center justify-center text-6xl">🎮</div>
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Hangman Game</h3>
+              <p class="text-slate-400 mb-4">
+                Interactive Hangman game in Python with clean game-flow logic and a friendly interface.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tag">Python</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="py-24 px-6 bg-slate-900">
+    <section id="skills" class="py-24 px-6 bg-slate-900">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">Skills</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold mb-3">GenAI & LLM</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">RAG pipelines</span><span class="tag">Prompt engineering</span><span class="tag">OpenAI</span><span class="tag">Gemini</span><span class="tag">Claude</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Machine Learning</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Feature Engineering</span><span class="tag">Model Evaluation</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Languages</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Tools & Web</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
+        <h2 class="text-4xl font-bold text-center mb-4 text-cyan-400">
           Contact Me
         </h2>
+        <p class="text-center text-slate-400 mb-12">Open to internships, collaborations and conversations about AI.</p>
 
-        <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
+        <form id="contact-form" action="https://formsubmit.co/kunjal02mahajan@gmail.com" method="POST" class="space-y-6">
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
 
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+          <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <textarea name="message" rows="5" placeholder="Message" required class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+
+          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
             Send Message
           </button>
+          <p id="form-status" class="text-sm text-slate-400"></p>
         </form>
       </div>
     </section>
+
+    <footer class="py-8 px-6 border-t border-slate-800 text-center text-slate-500 text-sm">
+      © <span id="year">2026</span> Kunjal Mahajan
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
